@@ -2,6 +2,7 @@ package tests;
 
 import base.DriverSetup;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -10,6 +11,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pages.SearchPage;
+//import java.time.Duration;
+
+//import org.openqa.selenium.support.ui.WebDriverWait;
+//import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class SearchTest {
 
@@ -17,7 +22,9 @@ public class SearchTest {
     SearchPage searchPage;
     WebDriverWait wait;
     Actions actions;
-
+    
+   // WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    
     @Parameters("browser")
     @BeforeClass
     public void setup(String browser) {

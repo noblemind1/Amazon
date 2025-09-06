@@ -9,8 +9,12 @@
     <classes>
       <class name="tests.SearchTest">
         <methods>
+          <include name="testSearchProduct"/>
+          <include name="testViewProductDetails"/>
           <include name="setup"/>
           <include name="testApplyFilters"/>
+          <include name="testBlankSearch"/>
+          <include name="testSortLowToHigh"/>
         </methods>
       </class> <!-- tests.SearchTest -->
       <class name="tests.CartTest">
@@ -24,6 +28,13 @@
           <include name="setDriver"/>
         </methods>
       </class> <!-- tests.CartTest -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="verifyLoginTest"/>
+          <include name="setDriver"/>
+          <include name="validLoginTest"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
     </classes>
   </test> <!-- LoginAndSearchTest_Chrome(failed) -->
 </suite> <!-- Failed suite [AmazonTestSuite] -->
